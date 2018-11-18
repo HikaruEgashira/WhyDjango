@@ -1,0 +1,21 @@
+{% extends "./_base.html" %}
+
+{% block content %}
+
+<h1 style="color: #129c4cb6; text-shadow: 1px 1px 0 #000">{{ post.title }}</h1>
+
+<br><br>
+
+<h3>{{ post.body1 }}</h3>
+<br><br>
+<h3>{{ post.body2 }}</h3>
+<br><br>
+<h3>{{ post.body3 }}</h3>
+<br><br>
+<h3>{{ post.body4 }}</h3>
+
+<br><br>
+
+<h3><a href="{% url 'post_detail' post.id|add:1 %}" style="text-decoration: none; color: #75ade0">next</a></h3>
+
+{% endblock %}
